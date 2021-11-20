@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ul-link li{
+    display: inline;
+
+}
+
+.ul-link a{
+    text-decoration: none;
+    display: block;
+    float: right;
+    margin: 20px;
+    color: white;
+
+}
+
+.ul-link img{
+    width: 400px;
+}
+
+
+.nav-link{
+    background-color: #333;
+}
+
+
+p{
+    text-align: center;
+     font-size: 40px;
+     color: black;
+     font-weight: bold;
+     margin-top: 30px;
+
+}
+
+
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./plane_animation_img/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.runway {
+
+height: 200px;
+width: 100%;
+background-image: url(./plane_animation_img/images/road.jpg);
+position: absolute;
+left: 0;
+bottom: 0;
+
+
+}
+
+.airplane {
+    width: 500px;
+    position: absolute;
+    bottom: 150px;
+    right: -200px;
+    animation: plan 4s linear infinite;
+    transform-origin: 100% 50%;
+}
+
+@keyframes plan{
+
+0%{
+    transform: translateX(0px) translateY(0px) rotate(0deg) ;
+}
+
+30%{
+    transform: translateX(-500px) translateY(0px) rotate(0deg) ;
+}
+
+100%{
+    transform: translateX(-1500px) translateY(-200px) rotate(20deg)  ;
+}
+
+
+}
